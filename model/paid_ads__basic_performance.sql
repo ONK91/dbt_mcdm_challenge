@@ -24,7 +24,7 @@ WITH bing AS (
             ,channel AS channel
             ,NULL AS creative_id
             ,NULL AS placement_id
-    FROM    {{ref('src_ads_bing_all_data')}}
+    FROM    `improvado-390516`.`dbt_okovalenko`.`src_ads_bing_all_data`
 )
 ,tiktok AS (
     SELECT  date AS date
@@ -52,7 +52,7 @@ WITH bing AS (
             ,channel AS channel
             ,NULL AS creative_id
             ,NULL AS placement_id
-    FROM    {{ref('src_ads_tiktok_ads_all_data')}}
+    FROM    `improvado-390516`.`dbt_okovalenko`.`src_ads_tiktok_ads_all_data`
 )
 ,facebook AS (
     SELECT  date AS date
@@ -80,7 +80,7 @@ WITH bing AS (
             ,channel AS channel
             ,creative_id AS creative_id
             ,NULL AS placement_id
-    FROM    {{ref('src_ads_creative_facebook_all_data')}}
+    FROM    `improvado-390516`.`dbt_okovalenko`.`src_ads_creative_facebook_all_data`
 )
 ,twitter AS (
     SELECT  date AS date
@@ -108,7 +108,7 @@ WITH bing AS (
             ,channel AS channel
             ,NULL AS creative_id
             ,NULL AS placement_id
-    FROM    {{ref('src_promoted_tweets_twitter_all_data')}}
+    FROM    `improvado-390516`.`dbt_okovalenko`.`src_promoted_tweets_twitter_all_data`
 )
 SELECT * FROM bing
 UNION ALL
