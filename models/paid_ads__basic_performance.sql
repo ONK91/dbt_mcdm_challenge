@@ -59,7 +59,7 @@ WITH bing AS (
             ,add_to_cart AS add_to_cart
             ,inline_link_clicks AS clicks
             ,comments AS comments
-            ,NULL AS engagements
+            ,views AS engagements
             ,impressions AS impressions
             ,NULL AS installs
             ,likes AS likes
@@ -72,7 +72,7 @@ WITH bing AS (
             ,NULL AS revenue
             ,shares AS shares
             ,spend AS spend
-            ,NULL AS total_conversions
+            ,purchase AS total_conversions
             ,views AS video_views
             ,ad_id AS ad_id
             ,adset_id AS adset_id
